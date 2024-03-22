@@ -1,0 +1,39 @@
+.contain{
+  height:48vh;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-image{
+  position:absolute;
+  bottom: 0;
+  left:0;
+  right:0;
+  top:0;
+  opacity: 0.8;
+  filter: blur(3px);
+  box-sizing: cover;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/ai.png);
+  z-index:-1;
+}
+
+.divider{
+  margin-top:-60px;
+  padding:43px 30px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  border-style:solid;
+  border-width: 0;
+  box-shadow: 1px 1px rgba(0.2,0.2,0,0.2);
+
+  width:70%;
+  background-color: white!important;
+  z-index:999;
+  
+}
+

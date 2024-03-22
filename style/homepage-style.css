@@ -1,0 +1,497 @@
+*{
+  margin:0;
+  padding:0;
+}
+:root{
+  --background:rgba(255, 251, 0, 0.85);
+}
+
+body{
+  margin:0;
+  font-weight: 400;
+  height:1000px;
+
+}
+
+.logo{
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+
+.logo img{
+  height:40px;
+}
+
+header{
+  background-color: var(--background);
+  /*为什么要center*/
+  text-align: center;
+  position:fixed;
+  z-index:999;
+  width:100%;
+}
+
+nav{
+  position:absolute;
+  /*完全放到左上角*/
+  text-align: left;
+  left:0;
+  top:100%;
+  /*与header一致,充斥整个页面*/
+  background-color: var(--background);
+  width:100%;
+  /*替换display:none
+  display: none;*/
+  transform: scale(1,0);
+  /*从正确位置过度*/
+  transform-origin:top;
+  transition:transform 200ms ease-in-out ;
+}
+
+nav ul{
+  /*初始化，去掉原点*/
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+nav li{
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a{
+  color:black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size:1.2rem;
+  text-transform: uppercase;
+  opacity:0;
+  transition: opacity 150ms ease-in-out ms;
+}
+
+nav a:hover{
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color:white;
+}
+
+.nav-toggle{
+  display: none;
+}
+
+.nav-toggle-label{
+  position:absolute;
+  top:0;
+  left:0;
+  /*和下面导航栏间距的一样*/
+  margin-left:1em;
+  display: flex;
+  height:100%;
+  align-items: center;
+}
+
+.nav-toggle:checked ~nav{
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~nav a{
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+  display: block;
+  background-color: black;
+  height:2px;
+  width:2em;
+  border-radius: 2px;
+  position:relative;
+
+}
+
+.nav-toggle-label span::before{
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+  top: 7px;
+}
+
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+  content:'';
+}
+
+ .sign-up-button,
+ .sign-in-button{
+  display:none;
+}
+ 
+.hero{
+  width:100%;
+  height:100vh;
+  color:white;
+  background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url(../images/bike-2086759.jpg);
+  background-size: cover;
+  /*将图片整体再往下移动一点*/
+  background-position:center;
+  /*用于到时候附着文字*/
+  position:relative;
+  /*裁剪图片以适应元素框*/
+  overflow: hidden;
+
+}
+
+.content{
+  position:absolute;
+  top:40%;
+  left:8%;
+  transform: translateY(-40%);
+  width:70%;
+}
+
+.content h1{
+  font-size:40px;
+  margin-bottom: 30px;
+  line-height:55px;
+}
+
+.content p{
+  line-height: 35px;
+  margin-bottom: 40px;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size:18px;
+  color:#c4c4c4;
+}
+
+.content button{
+  background-color: white;
+  padding:15px 30px;
+  font-weight: bold;
+  font-size:20px;
+  border:none;
+  border-radius: 10px;
+  margin-right:20px;
+  cursor:pointer;
+}
+
+.content button:hover{
+  background-color: hwb(0 94% 5%);
+  transition:1s;
+}
+
+.content .content-sign-button:hover{
+  background-color: hsl(39, 100%, 58%);
+}
+
+.content .content-sign-button{
+  background-color:rgb(255, 165, 0) ;
+  color:white;
+}
+
+
+@media screen and (min-width:960px){
+  .nav-toggle-label{
+    display: none;
+  }
+  header{
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px,2fr) 2fr;
+  }
+  .logo{
+    grid-column: 2 / 3;
+  }
+
+  nav{
+    /*取消之前的设置*/
+    all:unset;
+    grid-column: 3/4;
+    /*再放整体*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav a{
+    opacity:1;
+    position: relative;
+  }
+  /*在这个元素之前展示*/
+  nav a::before{
+    /*必须要有*/
+    content:"";
+    /*不然线就不是悬停在上面了*/
+    display:block;
+    /*线的高度*/
+    height:5px;
+    /*线的颜色*/
+    background-color: black;
+    position:absolute;
+    /* top:-.75em; */
+    
+    bottom:-.75em;
+    left:0;
+    right:0;
+    transform:scale(0,1);
+    /*立即开始增长，延迟250ms开始回缩*/
+    transition:transform ease-in-out 250ms;
+  }
+  nav a:hover::before{
+    transform:scale(1,1);
+
+  }
+
+
+  /*布局导航整体*/
+  nav ul{
+    display: flex;
+  }
+
+  nav li{
+    margin-left:2em;
+    margin-bottom: 0;
+  }
+  
+  .sign-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right:20px
+  }
+  .sign-in-button,
+  .sign-up-button{
+    display: inline-block;
+    margin-right:1em;
+  }
+
+  .sign-in-button{
+    background-color: white;
+    padding:5px 20px;
+    border:none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor:pointer;
+  }
+  .sign-up-button{
+    background-color:rgb(255, 165, 0);
+    color: white;
+    padding:5px 20px;
+    border:none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor:pointer;
+  }
+  .content{
+    position:absolute;
+    top:43%;
+    left:8%;
+  
+    transform: translateY(-50%);
+    width:60%;
+  }
+  
+  .content h1{
+    font-size:65px;
+    margin-bottom: 30px;
+    line-height:85px;
+  }
+  
+  .content p{
+    line-height: 35px;
+    margin-bottom: 40px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size:18px;
+    color:#c4c4c4;
+  }
+  
+  .content button{
+    background-color: white;
+    padding:20px 40px;
+    font-weight: bold;
+    font-size:20px;
+    border:none;
+    border-radius: 10px;
+    margin-right:20px;
+    cursor:pointer;
+  }
+  
+  .content button:hover{
+    background-color: hsl(0, 100%, 99%);
+    transition:1s;
+  }
+  
+  .content .content-sign-button{
+    background-color:rgb(255, 165, 0) ;
+    color:white;
+  }
+
+}
+
+
+/*自行车介绍*/
+  .bikes-introduction{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top:10rem;
+    padding-bottom: 3rem;
+  }
+
+  .bikes-introduction h1{
+    font-size:36px;
+    font-weight: 600;
+  }
+
+  .bikes-introduction p{
+    color:#9f9e9e;
+    font-size:14px;
+    padding:10px;
+    font-weight:bold;
+  }
+
+  .bikes-introduction span{
+    color:#ff9900;
+  }
+
+  
+  .bikes-introduction-row{
+    margin-top:5%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bikes-col{
+    flex-basis:31%;/*告诉flex里每个元素应该占据盒子的多大*/
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom:5%;
+    padding:20px 12px;
+    box-sizing: border-box;/*让框框们分的更开*/
+    transition:0.5s;/*transition加在非伪类的主类上*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .bikes-introduction-row h3{
+    text-align: center;
+    font-weight: 600;
+    font-size:30px;
+  }
+  
+  .bikes-col:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);/*最后一个属性越近1越黑*/
+  }
+
+  .bikes-col img{
+    height:100%;
+    width:100%;
+    margin-bottom: 10px;
+    margin-top:10px;
+  }
+
+
+  @media (max-width:850px){
+    .bikes-introduction-row{
+      flex-direction: column;
+    
+    }
+  }
+
+/*footer*/
+
+
+footer{
+  margin-top:9rem;
+  background-color:#212329;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.footer-container{
+  margin-top:20px;
+  background-color: #212329;
+  width:88%;
+  height:40vh;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-left{
+  flex:4;
+  margin:1rem  5rem;
+  line-height: 3rem;
+  font-family:'Noto Sans SC', sans-serif; 
+  color:white;
+}
+
+.footer-left .icon{
+  height:3rem;
+}
+
+.footer-heading{
+  color:#c4c4c4;
+  display: flex;
+  flex-direction: column;
+  margin-right:4rem;
+  padding-top:1.25rem;
+  flex:3;
+}
+
+.footer-heading h2{
+  margin-bottom: 2rem;
+}
+
+.footer-heading a{
+  font-family:'Noto Sans SC', sans-serif; 
+  color:white;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
+.footer-heading a:hover,
+.footer-3 div:hover{
+  color:#ff9900;
+  transition:0.3s ease-in-out;
+}
+
+.footer-3 div{
+  font-family:'Noto Sans SC', sans-serif; 
+  color:white;
+  text-decoration: none;
+  margin-bottom: 1.5rem;  
+  display: flex;
+}
+
+.footer-3 .icon{
+  height:2rem;
+  width:auto;
+  padding-right:0.25rem;
+}
+
+@media screen and (max-width:1050px){
+  .footer-container{
+    height: 50vh;
+  }
+  .footer-left{
+    display: none;
+  }
+  .footer-heading{
+    margin-right:3rem;
+  }
+}
+
+@media screen and (max-width:700px){
+  .footer-heading{
+    margin-right: 1.8em;
+  }
+
+}
+
+a{
+  text-decoration: none;
+}

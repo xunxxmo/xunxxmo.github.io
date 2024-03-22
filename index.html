@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style/homepage-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="try.css">
+    <script defer src="app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <title>一本快速上手骑行的民间秘籍</title>
+  </head>
+  <body>
+    
+    <div class="hero" >
+      <header>
+        <div class="logo"><img src="images/cycleskillmentor-high-resolution-logo-transparent.png"></div>
+        <input type="checkbox" id='nav-toggle' class="nav-toggle">
+        <nav>
+          <ul>
+            <li><a href="index.html">主页</a></li>
+            <li><a href="bikeSelect.html">自行车选择</a></li>
+            <li><a href="studyMap.html">学习路线</a></li>
+            <li><a href="basicKnowledge.html">基本知识</a></li>
+            <li><a href="contactUs.html">联系我们</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class='nav-toggle-label'>
+          <span></span>
+        </label>
+        <div class='sign-container'>
+          <a href="signPage.html"><button class='sign-in-button'>登录</button></a>
+
+          <a href="signPage.html"><button class='sign-up-button'>注册</button></a>
+        </div>
+      </header>
+      <div class="content">
+        <h1>
+          是否厌倦了晦涩的自行车教程？<br>
+          选择我们，保持对自行车的激情，精进骑自行车的技术</h1>
+        <p>我们将通过问卷调查为您选择适合自己的自行车提供建议。并根据您的选择，为您制定个性化的自行车学习路线，力求减少术语以通俗易懂的语言讲解，助力您从小白到中级学习者。此外，还提供更多学习资料，从赛事到优质博主，促进您对自行车的了解与热爱。</p>
+        <a href="#bikes-introduction"><button class="content-learnmore-button" >了解更多</button></a>
+        <a href="signPage.html"><button class="content-sign-button">立刻登录</button></a>
+      </div>
+    </div>
+
+    <div class="bikes-introduction" id="bikes-introduction" >
+      <h1>常见自行车介绍</h1>
+      <p class="comment">我们将为你介绍三种常见的，适合初学者的自行车</p>
+      <div class="bikes-introduction-row">
+        <div class="bikes-col fade-in2">
+          <h3>山地车</h3>
+          <img src="images/mountbike.png">
+          <p class="bikes-feature"><span>优点</span>：适合崎岖山区，强大的悬挂系统提供良好的减震效果，更适用于复杂的地形，越野爱好者的首选。<br>
+            <span>缺点</span>：较重，不如公路自行车快速，适应平坦路面能力较弱。</p>
+        </div>
+        <div class="bikes-col fade-in">
+          <h3>公路车</h3>
+          <img src='images/roadbike.png'>
+          <p class="bikes-feature"><span>优点</span>：轻量化设计，减少阻力，适合长途骑行和快速骑行,享受极致的风动。<br>
+            <span>缺点</span>：悬挂系统有限，对不平路面的适应性相对较弱，骑行姿势激进，舒适度较低</p>
+        </div>       
+        <div class="bikes-col fade-in3">
+          <h3>gravel车</h3>
+          <img src="images/gravel.PNG">
+          <p class="bikes-feature"><span>优点</span>：结合山地自行车和公路自行车的特点，适用于多种路况，悬挂系统和轮胎宽度均可调整。<br>
+            <span>缺点</span>：相对于专业的山地车或公路车，性能在特定领域可能有所妥协，相对公路车更重，相对山地车更不适合越野</p>
+        </div>
+      </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="0.6" d="M0,64L1440,128L1440,0L0,0Z"></path></svg>
+    <section id="lessonIntro" style="margin-top:-7rem;">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5 align-items-center justify-content-center">
+            <h1 class="fw-bold mb-4 " style="font-size:50px;margin-right:3rem;">我们希望教会您的<br>内容</h1>
+            <a href="studyMap.html" class="btn btn-lg btn-warning text-white fw-bold">一键get适合你的学习路线</a>
+          </div>
+          <div class="col-lg-7">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed fw-bold  fs-5" style="color:#F6821F;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    安全行驶
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">带您认识最基本的装备，教您佩带头盔，换道，以及6个安全小贴士。</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed fw-bold  fs-5" style="color:#F6821F;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    基本技术
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">教您如何刹车，上下自行车以及更好的转弯和换挡。</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed fw-bold  fs-5" type="button" style="color:#F6821F;" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    舒适骑行
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">教您如何调节车座，正确的骑行姿势以及如何补给。</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed fw-bold fs-5" type="button" style="color:#F6821F;" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    装备与保养
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">带您了解最基本的八大装备，教会您如何清洁和保养您的爱车。</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed fw-bold fs-5" type="button" style="color:#F6821F;" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    进阶技术
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">教会您如何单手甚至是放手骑行，如何进阶转弯，以及推荐了优质视频供您进一步学习。</div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----Footer---->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <svg t="1702467978411" class="icon" viewBox="0 0 1792 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4447" width="200" height="200"><path d="M1456 352c-61.568 0-119.136 16.928-168.832 45.952L1069.536 64h307.168c-0.416 15.936-4.128 42.592-22.368 63.552C1335.552 149.088 1305.184 160 1264 160a16 16 0 0 0 0 32c50.848 0 89.344-14.592 114.432-43.392 37.216-42.752 29.76-100.352 29.408-102.784A16 16 0 0 0 1392 32h-352a15.936 15.936 0 1 0-13.376 24.768l90.592 139.008H609.536L510.88 32H688a16 16 0 0 0 0-32h-288a16 16 0 0 0 0 32h74.048c0.32 0.736 0.384 1.536 0.8 2.24l109.184 181.184-97.728 172.48A333.76 333.76 0 0 0 336 352C150.72 352 0 502.72 0 688S150.72 1024 336 1024c178.816 0 325.024-140.512 333.44-320H1024c0.928 18.528-3.072 43.776-20.608 63.648C984.448 789.12 953.696 800 912 800a16 16 0 0 0 0 32c51.456 0 90.368-14.624 115.648-43.456 36.544-41.728 29.664-97.152 29.376-99.488a16 16 0 0 0-15.872-13.92h-125.696l225.504-442.88 119.36 183.168C1175.52 476.448 1120 575.744 1120 688 1120 873.28 1270.72 1024 1456 1024S1792 873.28 1792 688 1641.28 352 1456 352zM1107.36 224l-219.136 434.176L628.832 224h478.528z m-504.384 22.88l258.08 428.256H671.36a335.584 335.584 0 0 0-157.184-271.488l88.8-156.768z m36.384 428.256h-279.008l138.048-243.68a303.776 303.776 0 0 1 140.96 243.68zM336 992C168.384 992 32 855.616 32 688S168.384 384 336 384c48.32 0 93.888 11.648 134.528 31.776l-151.552 267.456a15.936 15.936 0 0 0 0.096 15.936c2.848 4.896 8.128 7.936 13.824 4.8h306.144C629.088 865.824 497.184 992 336 992z m1120 0c-167.616 0-304-136.384-304-304 0-101.024 49.728-190.464 125.824-245.76l167.904 257.632a16.064 16.064 0 0 0 22.144 4.672 16.064 16.064 0 0 0 4.672-22.144l-167.904-257.632A301.504 301.504 0 0 1 1456 384c167.616 0 304 136.384 304 304S1623.616 992 1456 992z" fill="#ffffff" p-id="4448"></path></svg>
+          <h2>Get a bicycle. <br>You will not regret it <br>if you live.</h2>
+          <h2>----  Mark Twain</h2>
+        </div>
+        
+        <div class="footer-heading footer-1">
+          <h2>导航</h2>
+          <a href="bikeSelect.html">自行车选择</a>
+          <a href="studyMap.html">学习路线</a>
+          <a href="basicKnowledge.html">基本知识</a>
+          <a href="contactUs.html">关于我们</a>        
+        </div>
+  
+        <div class="footer-heading footer-2">
+          <h2>服务</h2>
+          <a href="bikeSelect.html">调查问卷</a>
+          <a href="studyMap.html">量身定制</a>
+          <a href="basicKnowledge.html#sources">优质资源推荐</a>
+          <a href="https://video.zhibo.tv/">观看自行车比赛</a>        
+        </div>
+  
+        <div class="footer-heading footer-3">
+          <h2>联系我们</h2>
+          <div><svg t="1702468333958" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7434" width="200" height="200"><path d="M874.666667 181.333333H149.333333c-40.533333 0-74.666667 34.133333-74.666666 74.666667v512c0 40.533333 34.133333 74.666667 74.666666 74.666667h725.333334c40.533333 0 74.666667-34.133333 74.666666-74.666667V256c0-40.533333-34.133333-74.666667-74.666666-74.666667z m-725.333334 64h725.333334c6.4 0 10.666667 4.266667 10.666666 10.666667v25.6L512 516.266667l-373.333333-234.666667V256c0-6.4 4.266667-10.666667 10.666666-10.666667z m725.333334 533.333334H149.333333c-6.4 0-10.666667-4.266667-10.666666-10.666667V356.266667l356.266666 224c4.266667 4.266667 10.666667 4.266667 17.066667 4.266666s12.8-2.133333 17.066667-4.266666l356.266666-224V768c0 6.4-4.266667 10.666667-10.666666 10.666667z" fill="#666666" p-id="7435"></path></svg> 972867691@qq.com</div>
+          <div><svg t="1702468363442" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8433" width="200" height="200"><path d="M732.096 896c-105.696 0-319.968-109.088-422.784-212.32-102.784-103.264-211.392-318.496-211.392-424.64C97.92 259.04 178.912 128 231.776 128s211.392 159.232 158.528 212.352c-52.864 53.056-105.696 53.056-105.696 106.144s52.832 106.144 105.696 159.232c52.832 53.088 105.696 106.144 158.528 106.144 52.864 0 52.864-53.056 105.696-106.144 52.832-53.088 211.392 106.144 211.392 159.232 0 53.088-133.824 131.04-133.824 131.04z" fill="#ffffff" p-id="8434"></path></svg> ...........</div>
+          <div><svg t="1702468450413" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9454" width="200" height="200"><path d="M793.088 485.248a298.688 298.688 0 1 0-562.432-0.64C257.92 560.64 352.448 698.496 512 891.328c159.232-192.64 253.76-330.176 281.088-406.08zM512 1024c-205.76-241.472-326.272-411.712-361.664-510.72a384 384 0 1 1 723.072 0.832C837.76 612.928 717.312 782.848 512 1024.064z m0-512a128 128 0 1 0 0-256 128 128 0 0 0 0 256z" fill="#ffffff" p-id="9455"></path></svg>武汉理工大学</div>
+        </div>  
+      </div>
+
+      
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

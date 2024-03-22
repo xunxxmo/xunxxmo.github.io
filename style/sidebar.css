@@ -1,0 +1,37 @@
+.sidebar ul > a {
+	font-size:40px;
+	display: inline-block;
+	padding: 30px 0px;
+
+	opacity: 0.7;
+	transition: all 0.2s;
+}
+
+
+.sidebar{
+  background-color: #111;
+}
+
+.sidebar  ul {
+	list-style: none;
+}
+
+.sidebar  ul li {
+	font-size: 20px;
+	padding: 19px 0;	
+  text-decoration: none;
+  font-weight: bold;
+	border-bottom: 0.5px solid #111;
+}
+
+
+
+.sidebar  ul li a {
+	color: #D7D5D5;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover{
+  color:white;
+  box-shadow: 1px 1px rgba(0.2,0,0,0.2);
+}

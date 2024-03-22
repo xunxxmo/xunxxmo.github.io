@@ -1,0 +1,86 @@
+*{
+  margin:0;
+  padding:0;
+}
+header{
+  top:0;
+}
+
+.container{
+  background-image:url(../images/stacked-waves-haikei.png);
+  height:100vh;
+  background-size: cover;
+  /*将图片整体再往下移动一点*/
+  background-position:center;
+  /*用于到时候附着文字*/
+  position:relative;
+  /*裁剪图片以适应元素框*/
+  overflow: hidden;
+  background-repeat: no-repeat;
+  margin-bottom: -18vh;
+}
+.app{
+  background-color: #fff;
+  width:90%;
+  max-width: 600px;
+  margin:281px auto ;
+  border-radius: 10px;
+  padding:30px;
+}
+.app h1{
+  font-size: 25px;
+  font-weight: 600;
+  border-bottom: 1px solid #333 ;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.quiz{
+  padding:20px 0;
+}
+.quiz h2{
+  font-size: 18px;
+  font-weight: 600;
+
+}
+.answer-btn{
+  background-color: #fff;
+  color:#222;
+  font-weight: 500;
+  width: 100%;/*延展到整个div容器中的一行,起到div的作用*/
+  border:1px solid #222;
+  padding: 10px;
+  margin:10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor:pointer;
+  transition: all 0.3s;
+}
+.answer-btn:hover:not([disabled]){
+  background-color:#222 ;
+  color:white;
+}
+.answer-btn:disabled{
+  cursor:no-drop;
+}
+
+#next-btn{
+  background-color: #001e4d;
+  color:#fff;
+  font-weight: 500;
+  width:150px;
+  border:0;
+  padding:10px;
+  /*button居中两行代码*/
+  margin: 20px auto 0;
+  display:none;/*只有选择任何一个选项才会变成block*/
+  border-radius: 4px;
+  cursor:pointer;
+}
+.selected{
+  background-color: #ff9900;
+}
+.quiz .recommended{
+  font-size: 40px;
+  color:#ff9900;
+  margin-bottom: 50px;
+}

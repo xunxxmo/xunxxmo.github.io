@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style/signPage.css">
+    <link rel="stylesheet" href="style/sign.css">
+  </head>
+  <body>
+    <div class="container right-panel-active">
+      <!-- Sign Up -->
+      <div class="container__form container--signup">
+        <form action="#" class="form" id="form1">
+          <h2 class="form__title">注册</h2>
+
+          <div class="input-container" >
+            <div class="input-right">
+              <input class="input input-username" type="text" placeholder="在此输入账号" required onblur="isValidUsername(value)" >
+              <div class="right-operation-username"></div >
+            </div>
+          </div>
+    
+          <div class="hint-container-username" >
+          </div>
+
+
+          <div class="input-container" >
+
+            <div class="input-right">
+              <input placeholder="请输入邮箱" type="email" required class="input input-email" onblur="isValidEmail(value)">
+              <div class="right-operation-email"></div >   
+            </div>
+    
+          </div>
+          <div class="hint-container-email"></div>
+
+        <div class="input-container" >
+          <div class="input-right">
+            <input class="input input-pw" size="20" type="password" placeholder="请输入密码" required onblur="isValidPw(value)">
+            <div class="right-operation-pw"></div >
+          </div>
+  
+        </div>
+        <div class="hint-container-pw" ></div>
+
+        <div class="input-container" >
+          <div class="input-right">
+            <input class="input input-repw" size="20" type="password" placeholder="请再次输入密码" required onblur="isSamePw()">
+            <div class="right-operation-repw"></div >          
+          </div>
+        </div>
+        <div class="hint-container-repw" >
+        </div>
+
+          <button class="btn">Sign Up</button>
+        </form>
+      </div>
+    
+      <!-- Sign In -->
+      <div class="container__form container--signin">
+        <form action="#" class="form" id="form2">
+          <h2 class="form__title">登录</h2>
+          <div class="input-container" >
+            <div class="input-right">
+              <input class="input input-username" type="text" placeholder="在此输入账号" required onblur="isValidUsername(value)" >
+              <div class="right-operation-username"></div >
+            </div>
+          </div>
+    
+          <div class="hint-container-username" >
+          </div>
+
+          <div class="input-container" >
+            <div class="input-right">
+              <input class="input input-pw" size="20" type="password" placeholder="请输入密码" required onblur="isValidPw(value)">
+              <div class="right-operation-pw"></div >
+            </div>
+    
+          </div>
+          <div class="hint-container-pw" ></div>
+          <a href="#" class="link">忘记了你的密码?</a>
+          <button class="btn">Sign In</button>
+        </form>
+      </div>
+    
+      <!-- Overlay -->
+      <div class="container__overlay">
+        <div class="overlay">
+          <div class="overlay__panel overlay--left">
+            <button class="btn" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay__panel overlay--right">
+            <button class="btn" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/signPage.js"></script>
+    <script src="js/sign.js"></script>
+  </body>
+
+</html>

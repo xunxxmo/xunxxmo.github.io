@@ -1,0 +1,55 @@
+.carousel-item{
+  height:50rem;
+}
+
+header{
+  top:0;
+}
+
+body{
+  height:5000px;
+}
+
+.custom-border {
+  position: relative;
+  padding: 20px; /* 调整内容区域与边框的距离 */
+}
+
+.custom-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  border-left :3px solid #000; /* 使用 border-left 控制左边的边框 */
+  box-sizing: border-box;
+}
+
+.check-button{
+  background-color: rgb(246, 130, 31);
+  text-decoration: none;
+  color:white;
+  border-radius: 14px 14px 14px 14px;
+  padding: 14px 40px 14px 40px;
+  font-weight: bold;
+  font-size:22px;
+  border-radius: 14px;
+  border-width: 0;
+  border-bottom-color :rgb(207, 106, 20);
+  border-bottom-style: solid;
+  border-bottom-width :4px;
+}
+
+
+.orange{
+  background-color:#F6821F;
+}
+
+.scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+}

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/homepage-style.css">
+    <link rel="stylesheet" href="style/lesson1.css">
+    <link rel="stylesheet" href="style/timeline.css">
+    <link rel="stylesheet" href="style/try.css">
+    <script defer src="js/app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+  
+  </head>
+
+  <body style="height:6000px">
+    <header>
+      <div class="logo"><img src="images/cycleskillmentor-high-resolution-logo-transparent.png"></div>
+      <input type="checkbox" id='nav-toggle' class="nav-toggle">
+      <nav>
+        <ul>
+          <li><a href="index.html">主页</a></li>
+          <li><a href="bikeSelect.html">自行车选择</a></li>
+          <li><a href="studyMap.html">学习路线</a></li>
+          <li><a href="basicKnowledge.html">基本知识</a></li>
+          <li><a href="contactUs.html">联系我们</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class='nav-toggle-label'>
+        <span></span>
+      </label>
+      <div class='sign-container'>
+        <a href="signPage.html"><button class='sign-in-button'>登录</button></a>
+
+        <a href="signPage.html"><button class='sign-up-button'>注册</button></a>
+      </div>
+    </header>
+
+    <section id="intro1" style="margin-top:10rem;margin-bottom: 6rem;">
+      <div class="container-lg  px-lg-5">
+        <h1 class="text-warning display-2 text-center fw-bold">欢迎您来到我们的第一课</h1>
+        <p class="lead text-muted mb-4 text-center" >我们将在这节课里为您介绍以下内容。在了解并且实操后，您就具备了上路骑行的条件。</p>
+        <script src="https://use.typekit.net/bkt6ydm.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        
+        <div class="container-fluid ">
+            <div class="row example-basic">
+                <div class="col-md-12 example-title">
+                    <h2>内容如下</h2>
+                </div>
+                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 mt-2">
+                    <ul class="timeline">
+                        <li class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <a href="#helmet" class="content-link"><h3 class="timeline-title ">如何佩戴头盔</h3></a>
+                            </div>
+                        </li>
+
+                        <li class="timeline-item">
+                          <div class="timeline-marker"></div>
+                          <div class="timeline-content">
+                              <a href="#brake"  class="content-link"><h3 class="timeline-title">如何刹车</h3></a>
+                          </div>
+                        </li>
+
+                        <li class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                              <a href="#seat"  class="content-link"><h3 class="timeline-title">如何调节车座</h3></a>
+                            </div>
+                        </li>
+
+                        <li class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                              <a href="#upAndDown"  class="content-link"><h3 class="timeline-title">如何上自行车和下自行车</h3></a>                              
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                              <a href="#corner"  class="content-link"><h3 class="timeline-title">如何更好的转弯</h3></a>         
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                              <a href="#changeRoad"  class="content-link"><h3 class="timeline-title">如何变道</h3></a>         
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+          </div>
+      </div>
+
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff5500" fill-opacity="0.6" d="M0,128L20,149.3C40,171,80,213,120,218.7C160,224,200,192,240,170.7C280,149,320,139,360,138.7C400,139,440,149,480,133.3C520,117,560,75,600,48C640,21,680,11,720,53.3C760,96,800,192,840,202.7C880,213,920,139,960,101.3C1000,64,1040,64,1080,85.3C1120,107,1160,149,1200,160C1240,171,1280,149,1320,160C1360,171,1400,213,1420,234.7L1440,256L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg>
+
+    <!--佩戴头盔-->
+    <section id="helmet" class="pb-2" style="margin-top:-8rem;">
+      <div class="container-lg  align-items-center justify-content-center my-4 ">
+        <h1 class="mb-2 pt-5 display-3 text-center">如何佩戴头盔</h2>
+        <p class=" mb-5 text-danger fw-bold text-center">生命安全的最重要的防线</p>
+
+
+        <div class="row justify-content-center g-5 mt-5" >
+          <div class="col-lg-6 col-xl-5">
+
+            <img src="images/helmetIntro.png" alt="" class="img-fluid rounded-3">
+          </div>
+
+          <div class="col-lg-6">
+            <h1 class="custom-border fw-bold ">认识头盔</h1>
+            <p class="text-muted lh-lg lead">
+              自行车头盔是骑行者的重要保护装备，通过坚固的外壳和内部泡沫层，有效减轻事故中头部受伤的风险。具备舒适的佩戴体验和可调节的带扣，提供安全而舒适的骑行环境。
+            </p>
+            <a href="https://www.zhihu.com/tardis/zm/art/150805861?source_id=1005">
+              <button class="check-button fade-in">了解更多头盔信息 --></button>
+            </a>
+         
+          </div>
+        </div>
+
+
+
+        <h2 class="mb-4 text-center" style="margin-top:10rem;">具体佩戴步骤</h2>
+          <div class="card mb-5 shadow  rounded bg-white fade-in2">
+            <div class="row g-0 justify-content-center">
+              <div class="col-7  col-lg-5 col-xl-3 mt-3 mt-lg-0">
+                <img src="images/helmet1.png" class="img-fluid rounded-start">
+              </div>
+  
+              <div class=" col-lg-7 col-xl-9">
+                <div class="card-body text-start ">
+                  <h3 class="card-title pb-2 mt-2 border-bottom border-warning border-3"><i class="bi bi-1-circle"></i>将旋钮到最大。佩戴好后调整旋钮和下巴束带。</h5>
+                  <p class="card-text mb-2 lead">在尝试佩戴头盔前，需要将头盔内侧的旋钮调至最大，使得头盔处于最松的状态，然后戴上头盔。您的头盔应该与您的头部应舒适的贴合在一起，前额与头盔之间的距离应该小于一指。</p>
+                  <p class="card-text mb-2 lead">头盔的前沿应该与眉毛的距离在2.5cm内。为了最大程度的保护您的额头，请对着镜子，将自己的头盔保持水平。
+                  </p>
+                  <p class="card-text mb-2 lead">扭紧您的旋钮，扣上束带，确保束带的松紧合适，以能容下三个手指为准。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card mb-5 shadow  rounded bg-white fade-in">
+            <div class="row g-0 justify-content-center">
+              <div class=" col-lg-7 col-xl-9">
+                <div class="card-body text-start">
+                  <h3 class="card-title pb-2 mt-2 border-bottom border-warning border-3"><i class="bi bi-2-circle"></i>长大嘴巴，确保头部顶住头盔。并晃动头部。</h5>
+                  <p class="card-text mb-2 lead">如果长大嘴巴有松动，可能说明您需要再调整一下下巴的扣带。</p>
+                  <p class="card-text mb-2 lead">摇动头部，确定头部和头盔紧密的贴合。
+                  </p>
+                  <p class="card-text mb-2 display-5 text-warning fw-bold">调整好后，您就可以安全的出发了！</p>
+                </div>
+              </div>
+  
+              <div class="col-7  col-lg-5 col-xl-3 mt-3 mt-lg-0">
+                <img src="images/helmet2.png" class="img-fluid rounded-start">
+              </div>
+            </div>
+          </div>
+
+
+
+    </section>
+
+    <!--如何刹车-->
+    <section id="brake" class="mt-5">
+      <div  class="container-lg text-center align-items-center justify-content-center mb-4">
+        <h1 class="mb-2 display-3">如何刹车</h2>
+        <p class=" mb-5 text-danger fw-bold">安全行驶的必要技能</p>
+
+        <div class="row text-start">
+          <div class="col-md-3">
+            <figure class="figure">
+              <img src="images/brake1.png" class="figure-img img-fluid rounded " alt="...">
+              <figcaption class="figure-caption text-center">先刹前刹可能导致</figcaption>
+            </figure>
+          </div>
+
+          <div class="col-md-9 ">
+            <h2 class="display-5 border-bottom border-warning border-3">前后刹车的基本介绍</h2>
+            <p class="lead mb-2">前刹车（右刹）很强，控制前轮，先刹前刹车可能会因为惯性让后轮飞出去。</p>
+            <p class="lead mb-2">而只用后刹车，可能会车轮打滑侧弯。</p>
+            <p class="lead mb-2">所以对于初学者来说，一定要先后刹减速，然后用彻底停下来。</p>
+          </div>
+
+        </div>  
+        
+
+        <div class="row mt-5 text-start">
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 mb-5  rounded">
+              <div class="card-body">
+                <div class="card-title display-5 text-warning-emphasis border-bottom border-warning border-3 text-center">练习方法</div>
+                <div class="card-text lead mb-3">首先推行自行车：感受刹车的不同作用。</div>
+                <div class="card-text lead mb-3">刹车一定是左边后刹，右边前刹，这可能有点反直觉。但骑行中只需要记住一句话。先左再右，形成肌肉记忆</div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 mb-5  rounded border-1 border-dark">
+              <div class="card-body">
+                <div class="card-title display-5 text-warning-emphasis border-bottom border-warning border-3 text-center">刹车步骤</div>
+                <div class="card-text lead mb-3"><i class="bi bi-1-circle"></i>使用后刹，也就是左手先使自行车减速。即左减速</div>
+                <div class="card-text lead mb-3"><i class="bi bi-2-circle"></i>速度减下来后，放掉左手，用右手后刹减速。即右停下</div>
+
+                <div class="card-text text-danger text-center lead fw-bold mb-2">对于初学者来讲，双手一定要始终放到刹车上。<i class="bi bi-exclamation-triangle-fill text-warning"></i></div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 mb-5  rounded">
+              <div class="card-body">
+                <div class="card-title display-5 text-warning-emphasis border-bottom border-warning border-3 text-center">什么时候刹车</div>
+                <div class="card-text lead mb-3">为了避免速度过大而转弯幅度过大，我们需要在转弯前刹车。</div>
+                <div class="card-text lead mb-3">值得注意的是，在摩擦力小的地方，下雨的时候，刹车距离会更长点。</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="wave-container" id="seat">
+      <div class="container-lg">
+        <h1 class="mb-0 display-3  text-white text-center pt-5">如何调整座椅</h2>
+      </div>
+    </div>
+    <!--如何调整座椅-->
+    <section  class="mt-5 seat" 
+    ">
+      <div class="container-lg text-center align-items-center justify-content-center my-4 ">
+
+        <p class=" mb-4 text-danger fw-bold">健康骑行的第一步</p>
+
+
+        <h2 class="mb-3">具体步骤</h2>
+
+        <div class="card mb-5 shadow  rounded bg-white fade-in2">
+          <div class="row g-0 justify-content-center">
+            <div class="col-7  col-lg-6 col-xl-4 mt-3 mt-lg-0">
+              <img src="images/seat1.png" class="img-fluid rounded-start">
+            </div>
+
+
+            <div class=" col-lg-6 col-xl-8">
+              <div class="card-body text-start ">
+                <h3 class="card-title pb-2 mt-2 border-bottom border-warning border-3"><i class="bi bi-1-circle"></i>调整您的自行车座位高度</h3>
+                <p class="card-text p-0 m-0 mb-lg-2 lead"><i class="bi bi-dot dot"></i>坐垫太低会导致脚发不上力。坐垫太高会不安全，脚掌也需要去够踏板，很不方便。</p>
+                <p class="card-text p-0 m-0 mb-lg-2 lead"><i class="bi bi-dot dot"></i>首先您需要了解您的车应该如何进行座椅调节。
+                <p class="card-text p-0 m-0 mb-lg-2 lead fw-bold"><i class="bi bi-dot dot"></i>用后脚掌踩上踏板，将其踩到底，如果此时大腿和小腿呈现出一条直线，就说明坐高是完美的！以此为依据进行调整。</p>
+                <p class="card-text text-danger text-center lead fw-bold my-2">为了防止您在这个过程中摔倒，请靠墙或者亲朋好友的陪同下进行，熟练后可自行调整。<i class="bi bi-exclamation-triangle-fill text-warning"></i></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card mb-5 shadow  rounded bg-white fade-in2">
+          <div class="row g-0 justify-content-center">
+            <div class=" col-lg-6 col-xl-8">
+              <div class="card-body text-start ">
+                <h3 class="card-title pb-2 mt-2 border-bottom border-warning border-3"><i class="bi bi-2-circle"></i>明确坐在坐垫上的哪个位置</h3>
+                <p class="card-text p-0 m-0 mb-lg-2 lead"><i class="bi bi-dot dot"></i>坐的太靠后，会使得够不着把手。坐的太靠前，身体可能会比较局促。</p>
+                <p class="card-text p-0 m-0 mb-lg-2 lead fw-bold"><i class="bi bi-dot dot"></i>用前脚掌踩上踏板，将其踩到水平部分，如果此时小腿是垂直状态，就说明您找到了正确的位置！</p>
+                <p class="card-text p-0 m-0 mb-lg-2 lead bg-light text-warning fw-bold"><i class="bi bi-dot dot"></i>顺便讲解一下骑行过程中很重要的点，即，用前脚掌去发力。这么做有三大好处。前脚掌发力可以适应不平整的路面。可以更加方便的调节身体重心。还可以提升灵活性。</p>
+              </div>
+            </div>
+
+            <div class="col-7  col-lg-6 col-xl-4 mt-3 mt-lg-0">
+              <img src="images/seat2.png" class="img-fluid rounded-start">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card shadow  rounded bg-white fade-in2" style="margin-bottom: 10rem;" >
+          <div class="row g-0 justify-content-center">
+            <div class="col-7  col-lg-6 col-xl-3 mt-3 mt-lg-0">
+              <img src="images/seat3.png" class="img-fluid rounded-start">
+            </div>
+
+            <div class=" col-lg-6 col-xl-9">
+              <div class="card-body text-start ">
+                <h3 class="card-title pb-2 mt-2 border-bottom border-warning border-3"><i class="bi bi-3-circle"></i>调整坐垫倾斜角度</h3>
+                <p class="card-text p-0 m-0 mb-lg-2 lead"><i class="bi bi-dot dot"></i>坐垫一定要保持水平状态。如果向前倾斜我们可能往前滑，如果向后倾斜我们可能会感觉有什么东西在卡着我们。</p>
+                <p class="card-text p-0 m-0 mb-lg-2 lead fw-bold"><i class="bi bi-dot dot"></i>我们可以借助手机自带的水平仪来实现这一点</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+
+    <!--如何上下车-->
+
+
+    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 110" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(248, 249, 250, 1)" offset="0%"></stop><stop stop-color="rgba(248.525, 248.525, 248.525, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,11L120,22C240,33,480,55,720,58.7C960,62,1200,48,1440,34.8C1680,22,1920,11,2160,11C2400,11,2640,22,2880,29.3C3120,37,3360,40,3600,51.3C3840,62,4080,81,4320,89.8C4560,99,4800,99,5040,91.7C5280,84,5520,70,5760,69.7C6000,70,6240,84,6480,91.7C6720,99,6960,99,7200,84.3C7440,70,7680,40,7920,27.5C8160,15,8400,18,8640,31.2C8880,44,9120,66,9360,64.2C9600,62,9840,37,10080,25.7C10320,15,10560,18,10800,16.5C11040,15,11280,7,11520,14.7C11760,22,12000,44,12240,45.8C12480,48,12720,29,12960,22C13200,15,13440,18,13680,27.5C13920,37,14160,51,14400,64.2C14640,77,14880,88,15120,88C15360,88,15600,77,15840,67.8C16080,59,16320,51,16560,49.5C16800,48,17040,51,17160,53.2L17280,55L17280,110L17160,110C17040,110,16800,110,16560,110C16320,110,16080,110,15840,110C15600,110,15360,110,15120,110C14880,110,14640,110,14400,110C14160,110,13920,110,13680,110C13440,110,13200,110,12960,110C12720,110,12480,110,12240,110C12000,110,11760,110,11520,110C11280,110,11040,110,10800,110C10560,110,10320,110,10080,110C9840,110,9600,110,9360,110C9120,110,8880,110,8640,110C8400,110,8160,110,7920,110C7680,110,7440,110,7200,110C6960,110,6720,110,6480,110C6240,110,6000,110,5760,110C5520,110,5280,110,5040,110C4800,110,4560,110,4320,110C4080,110,3840,110,3600,110C3360,110,3120,110,2880,110C2640,110,2400,110,2160,110C1920,110,1680,110,1440,110C1200,110,960,110,720,110C480,110,240,110,120,110L0,110Z"></path></svg>
+    <section id="upAndDown" class="bg-light pb-4" >
+      <div class="container-lg">
+        <h1 class="display-3 text-center mb-3 ">如何安全上下车</h1>
+        <p class=" mb-4 text-danger fw-bold text-center mb-5">保持平衡，轻松上下车</p>
+       
+        <div class="row justify-content-center gap-4">
+          <div class="col-5">
+            <div class="card " >
+              <img src="images/up.png" alt="" class="card-img-top ">
+              <div class="card-body">
+                <h1 class="card-title border-bottom border-warning border-3 py-2"><i class="bi bi-arrow-up "></i>上车</h1>
+                <p class="card-text lead m-2 text-muted">在调节车座后，您可能会发现，由于车座的变高，上自行车变得困难了起来，不用担心，我们将用4步教会您安全地上自行车。</p>
+                <p class="card-text lead m-2"><i class="bi bi-1-circle"></i>假如您习惯于右脚启动，请先转动自行车踏板，使得右方的踏板在十点钟的方向，这可以帮助您更轻松的开始骑行。</p>
+                <p class="card-text lead m-2"><i class="bi bi-2-circle"></i>骑双手握住把手，按住刹车。</p>
+                <p class="card-text lead m-2"><i class="bi bi-3-circle"></i>将车稍稍倾斜向自己，惯用脚跨过车座，踩到踏板上。</p>
+                <p class="card-text lead m-2"><i class="bi bi-4-circle"></i>踩动踏板，坐上车座开始骑行。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-5">
+            <div class="card " >
+              <img src="images/down.png" class="card-img-top"  >
+              <div class="card-body">
+                <h1 class="card-title border-bottom border-warning border-3 py-2"><i class="bi bi-arrow-down "></i>下车</h1>
+                <p class="lead m-2 text-muted">同样是由于坐垫的升高，您的下车可能不再那么便捷。我们将教会您最容易掌握的下车方式，倾斜下车。</p>
+                <p class="lead m-2"><i class="bi bi-1-circle"></i>刹住车（如果您还没掌握这点，可以先将车座调到最低，练会刹车！）</p>
+                <p class="lead m-2"><i class="bi bi-2-circle"></i>将自行车向左边倾斜，确保左脚能踩在地面上。</p>
+                <p class="lead m-2"><i class="bi bi-3-circle"></i>右脚跨过车座，下车。</p>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="corner" class="mt-5">
+      <div  class="container-lg text-center align-items-center justify-content-center mb-4">
+        <h1 class="mb-2 display-3">如何转弯</h2>
+        <p class=" mb-5 text-danger fw-bold">控制车辆的必备技能</p>
+
+        <div class="row text-start">
+          <div class="col-md-4">
+            <figure class="figure">
+              <img src="images/corner.png" class="figure-img img-fluid rounded " alt="...">
+              <figcaption class="figure-caption text-center">转弯示意图</figcaption>
+            </figure>
+          </div>
+
+          <div class="col-md-8 ">
+            <h2 class="display-5 border-bottom border-warning border-3">转弯的基本介绍</h2>
+            <p class="lead mb-2">能够熟练地进行转弯使您更容易应对道路上的变化和障碍物，避免发生碰撞。</p>
+            <p class="lead mb-2">在骑行速度很快的时候，如果不会转弯的技巧很难适应较大的弯度。</p>
+            <p class="lead mb-2">学会转弯能提振您的自信心，适应更多地形以及路面！</p>
+
+          </div>
+
+        </div>  
+        
+
+        <div class="row mt-5 text-start">
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 mb-5  rounded">
+              <div class="card-body">
+                <div class="card-title display-5 text-warning-emphasis border-bottom border-warning border-3 text-center">练习方法</div>
+                <div class="card-text lead mb-3">先在无人的平路上体会转弯。</div>
+                <div class="card-text lead mb-3">牢记转弯步骤，刚开始控制速度，在慢速情况下转弯，一旦熟练了某一侧，可以继续下一侧。</div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 mb-5  rounded border-1 border-dark">
+              <div class="card-body">
+                <div class="card-title display-5 text-warning-emphasis border-bottom border-warning border-3 text-center">转弯步骤</div>
+                <div class="card-text lead mb-3"><i class="bi bi-1-circle"></i>转弯前捏后刹降速</div>
+                <div class="card-text lead mb-3"><i class="bi bi-2-circle"></i>为了避免接触地面，在转弯的过程中，您需要将靠近弯道的腿抬到最高点，相应的，外侧的腿就会在最低点，尽可能的将重心放到外侧脚。并站起，将臀部拉出到弯道的对立侧。</div>
+
+                <div class="card-text text-danger text-center lead fw-bold mb-2">尽量不要在转弯过程中刹车，会导致打滑，失去对车辆的控制！<i class="bi bi-exclamation-triangle-fill text-warning"></i></div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3 mb-5  rounded">
+              <div class="card-body">
+                <div class="card-title display-5 text-warning-emphasis border-bottom border-warning border-3 text-center">训练注意点强调</div>
+                <div class="card-text lead mb-3"><span class="fw-bold">重心压低！</span>这可以让您拥有更多的灵活性。</div>
+                <div class="card-text lead mb-3">眼睛看着您想去的地方，而不是想要避免的地方，可以帮您更好的过弯。</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--在骑车的时候变道-->
+  
+    <section id="changeRoad" style="margin-top:10rem;margin-bottom: 3rem;">
+      <div class="container-lg hidden">
+        <div class="row justify-content-center g-5 ">
+          <div class=" col-lg-6 col-xl-5">
+            <img src="images/changeRoad.png" class="img-fluid rounded-4 ">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="custom-border fw-bold ">如何变道</h1>
+            <p class="text-muted lh-lg lead">首先您需要掌握回头看的本领，在确认前方没有障碍物的前提下，快速回头看，注意保持手臂和胳膊处于直线，避免晃动。在您确认了后方暂时不会有车辆追上来之后，打图中的手势，示意自己要变道。
+            </p>
+            <a href="https://www.sohu.com/a/451775050_488659">
+              <button class="check-button">查看更多手势 --></button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#cff4fc" fill-opacity="0.6" d="M0,160L60,176C120,192,240,224,360,202.7C480,181,600,107,720,96C840,85,960,139,1080,154.7C1200,171,1320,149,1380,138.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    <section style="margin-top:5rem;position:relative;" >
+      <div class="container-lg text-center">
+        <h1 class="fw-bold mb-4 fade-in">现在您已经具备上路的条件了！</h1>
+        <p class="lead mb-4">可以在人少的公园进行休闲骑，但是如果想要能在马路上骑行，需要进一步的学习</p>
+        <a href="lesson2.html" class="check-button">点此进入下一节课</a>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <svg t="1702467978411" class="icon" viewBox="0 0 1792 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4447" width="200" height="200"><path d="M1456 352c-61.568 0-119.136 16.928-168.832 45.952L1069.536 64h307.168c-0.416 15.936-4.128 42.592-22.368 63.552C1335.552 149.088 1305.184 160 1264 160a16 16 0 0 0 0 32c50.848 0 89.344-14.592 114.432-43.392 37.216-42.752 29.76-100.352 29.408-102.784A16 16 0 0 0 1392 32h-352a15.936 15.936 0 1 0-13.376 24.768l90.592 139.008H609.536L510.88 32H688a16 16 0 0 0 0-32h-288a16 16 0 0 0 0 32h74.048c0.32 0.736 0.384 1.536 0.8 2.24l109.184 181.184-97.728 172.48A333.76 333.76 0 0 0 336 352C150.72 352 0 502.72 0 688S150.72 1024 336 1024c178.816 0 325.024-140.512 333.44-320H1024c0.928 18.528-3.072 43.776-20.608 63.648C984.448 789.12 953.696 800 912 800a16 16 0 0 0 0 32c51.456 0 90.368-14.624 115.648-43.456 36.544-41.728 29.664-97.152 29.376-99.488a16 16 0 0 0-15.872-13.92h-125.696l225.504-442.88 119.36 183.168C1175.52 476.448 1120 575.744 1120 688 1120 873.28 1270.72 1024 1456 1024S1792 873.28 1792 688 1641.28 352 1456 352zM1107.36 224l-219.136 434.176L628.832 224h478.528z m-504.384 22.88l258.08 428.256H671.36a335.584 335.584 0 0 0-157.184-271.488l88.8-156.768z m36.384 428.256h-279.008l138.048-243.68a303.776 303.776 0 0 1 140.96 243.68zM336 992C168.384 992 32 855.616 32 688S168.384 384 336 384c48.32 0 93.888 11.648 134.528 31.776l-151.552 267.456a15.936 15.936 0 0 0 0.096 15.936c2.848 4.896 8.128 7.936 13.824 4.8h306.144C629.088 865.824 497.184 992 336 992z m1120 0c-167.616 0-304-136.384-304-304 0-101.024 49.728-190.464 125.824-245.76l167.904 257.632a16.064 16.064 0 0 0 22.144 4.672 16.064 16.064 0 0 0 4.672-22.144l-167.904-257.632A301.504 301.504 0 0 1 1456 384c167.616 0 304 136.384 304 304S1623.616 992 1456 992z" fill="#ffffff" p-id="4448"></path></svg>
+          <h2>Get a bicycle. <br>You will not regret it <br>if you live.</h2>
+          <h2>----  Mark Twain</h2>
+        </div>
+        
+        <div class="footer-heading footer-1">
+          <h2>导航</h2>
+          <a href="bikeSelect.html">自行车选择</a>
+          <a href="studyMap.html">学习路线</a>
+          <a href="basicKnowledge.html">基本知识</a>
+          <a href="contactUs.html">关于我们</a>        
+        </div>
+  
+        <div class="footer-heading footer-2">
+          <h2>服务</h2>
+          <a href="bikeSelect.html">调查问卷</a>
+          <a href="studyMap.html">量身定制</a>
+          <a href="basicKnowledge.html#sources">优质资源推荐</a>
+          <a href="https://video.zhibo.tv/">观看自行车比赛</a>        
+        </div>
+  
+        <div class="footer-heading footer-3">
+          <h2>联系我们</h2>
+          <div><svg t="1702468333958" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7434" width="200" height="200"><path d="M874.666667 181.333333H149.333333c-40.533333 0-74.666667 34.133333-74.666666 74.666667v512c0 40.533333 34.133333 74.666667 74.666666 74.666667h725.333334c40.533333 0 74.666667-34.133333 74.666666-74.666667V256c0-40.533333-34.133333-74.666667-74.666666-74.666667z m-725.333334 64h725.333334c6.4 0 10.666667 4.266667 10.666666 10.666667v25.6L512 516.266667l-373.333333-234.666667V256c0-6.4 4.266667-10.666667 10.666666-10.666667z m725.333334 533.333334H149.333333c-6.4 0-10.666667-4.266667-10.666666-10.666667V356.266667l356.266666 224c4.266667 4.266667 10.666667 4.266667 17.066667 4.266666s12.8-2.133333 17.066667-4.266666l356.266666-224V768c0 6.4-4.266667 10.666667-10.666666 10.666667z" fill="#666666" p-id="7435"></path></svg> 972867691@qq.com</div>
+          <div><svg t="1702468363442" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8433" width="200" height="200"><path d="M732.096 896c-105.696 0-319.968-109.088-422.784-212.32-102.784-103.264-211.392-318.496-211.392-424.64C97.92 259.04 178.912 128 231.776 128s211.392 159.232 158.528 212.352c-52.864 53.056-105.696 53.056-105.696 106.144s52.832 106.144 105.696 159.232c52.832 53.088 105.696 106.144 158.528 106.144 52.864 0 52.864-53.056 105.696-106.144 52.832-53.088 211.392 106.144 211.392 159.232 0 53.088-133.824 131.04-133.824 131.04z" fill="#ffffff" p-id="8434"></path></svg> ...........</div>
+          <div><svg t="1702468450413" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9454" width="200" height="200"><path d="M793.088 485.248a298.688 298.688 0 1 0-562.432-0.64C257.92 560.64 352.448 698.496 512 891.328c159.232-192.64 253.76-330.176 281.088-406.08zM512 1024c-205.76-241.472-326.272-411.712-361.664-510.72a384 384 0 1 1 723.072 0.832C837.76 612.928 717.312 782.848 512 1024.064z m0-512a128 128 0 1 0 0-256 128 128 0 0 0 0 256z" fill="#ffffff" p-id="9455"></path></svg>武汉理工大学</div>
+        </div>  
+      </div>
+
+      
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

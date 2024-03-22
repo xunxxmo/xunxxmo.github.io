@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/homepage-style.css">
+    <link rel="stylesheet" href="style/lesson3.css">
+    <link rel="stylesheet" href="style/timeline.css">
+    <link rel="stylesheet" href="style/try.css">
+    <script defer src="js/app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+
+  
+  <body >
+    <header>
+      <div class="logo"><img src="images/cycleskillmentor-high-resolution-logo-transparent.png"></div>
+      <input type="checkbox" id='nav-toggle' class="nav-toggle">
+      <nav>
+        <ul>
+          <li><a href="index.html">主页</a></li>
+          <li><a href="bikeSelect.html">自行车选择</a></li>
+          <li><a href="studyMap.html">学习路线</a></li>
+          <li><a href="basicKnowledge.html">基本知识</a></li>
+          <li><a href="contactUs.html">联系我们</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class='nav-toggle-label'>
+        <span></span>
+      </label>
+      <div class='sign-container'>
+        <a href="signPage.html"><button class='sign-in-button'>登录</button></a>
+
+        <a href="signPage.html"><button class='sign-up-button'>注册</button></a>
+      </div>
+    </header>
+
+    <section id="intro3"   style="margin-top:10rem;margin-bottom: 6rem;">
+      <div class="container-lg  px-lg-5">
+        <h1 class="text-warning display-2 fw-bold text-center ">欢迎您来到我们的第三课</h1>
+        <p class="lead text-muted mb-1 text-center">这将是我们最后的旅程，助力您真正学会自行车，享受自行车！</p>
+        <p class="lead text-muted mb-4 text-center">接下来的内容可能难度会增加，请不要灰心，学习自行车是一个持续的过程！</p>
+
+        <div class="container-fluid ">
+          <div class="row example-basic">
+              <div class="col-md-12 example-title">
+                  <h2>内容如下</h2>
+              </div>
+              <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 mt-2">
+                  <ul class="timeline">
+                      <li class="timeline-item">
+                          <div class="timeline-marker"></div>
+                          <div class="timeline-content">
+                              <a href="#posture" class="content-link"><h3 class="timeline-title ">骑行姿势</h3></a>
+                          </div>
+                      </li>
+
+                      <li class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <a href="#food"  class="content-link"><h3 class="timeline-title">如何在骑行过程中补给</h3></a>
+                        </div>
+                      </li>
+                      <li class="timeline-item">
+                          <div class="timeline-marker"></div>
+                          <div class="timeline-content">
+                              <a href="#zhuangbei" class="content-link"><h3 class="timeline-title ">骑行装备介绍</h3></a>
+                          </div>
+                      </li>
+
+                      <li class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <a href="#maintenance"  class="content-link"><h3 class="timeline-title">保养您的爱车</h3></a>
+                        </div>
+                      </li>
+
+                      <li class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <a href="#freeOfHand1"  class="content-link"><h3 class="timeline-title">单手和放手骑行</h3></a>
+                        </div>
+                      </li>
+
+
+
+                  </ul>
+              </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="posture" style="margin-bottom: 5rem;">
+      <div class="container-lg hidden" id="d1">
+        <div class="row g-5 justify-content-center  h-100 ">
+
+          <div class="col-lg-5">
+            <img src="images/posture.png" alt="" class="img-fluid rounded-4">
+          </div>
+
+          
+          <div class="col-lg-6 h-50">
+            <h1 class="mb-4 custom-border">骑行姿势</h1>
+            <p class="lead my-2"><strong>做一定的热身</strong>骑行前热身是保持舒适，做好骑行准备的最佳方式之一，骑行前不热身可能导致肌肉紧张和不适。</p>
+            <p class="lead my-2"><strong>弯曲你的胳膊</strong>。能更好的过滤震动。</p>
+
+            <p class="lead my-2"><strong>放松核心肩膀和姿势。</strong>这可以避免酸痛。</p>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!--补给-->
+    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 110" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(248, 249, 250, 1)" offset="0%"></stop><stop stop-color="rgba(248.525, 248.525, 248.525, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,11L120,22C240,33,480,55,720,58.7C960,62,1200,48,1440,34.8C1680,22,1920,11,2160,11C2400,11,2640,22,2880,29.3C3120,37,3360,40,3600,51.3C3840,62,4080,81,4320,89.8C4560,99,4800,99,5040,91.7C5280,84,5520,70,5760,69.7C6000,70,6240,84,6480,91.7C6720,99,6960,99,7200,84.3C7440,70,7680,40,7920,27.5C8160,15,8400,18,8640,31.2C8880,44,9120,66,9360,64.2C9600,62,9840,37,10080,25.7C10320,15,10560,18,10800,16.5C11040,15,11280,7,11520,14.7C11760,22,12000,44,12240,45.8C12480,48,12720,29,12960,22C13200,15,13440,18,13680,27.5C13920,37,14160,51,14400,64.2C14640,77,14880,88,15120,88C15360,88,15600,77,15840,67.8C16080,59,16320,51,16560,49.5C16800,48,17040,51,17160,53.2L17280,55L17280,110L17160,110C17040,110,16800,110,16560,110C16320,110,16080,110,15840,110C15600,110,15360,110,15120,110C14880,110,14640,110,14400,110C14160,110,13920,110,13680,110C13440,110,13200,110,12960,110C12720,110,12480,110,12240,110C12000,110,11760,110,11520,110C11280,110,11040,110,10800,110C10560,110,10320,110,10080,110C9840,110,9600,110,9360,110C9120,110,8880,110,8640,110C8400,110,8160,110,7920,110C7680,110,7440,110,7200,110C6960,110,6720,110,6480,110C6240,110,6000,110,5760,110C5520,110,5280,110,5040,110C4800,110,4560,110,4320,110C4080,110,3840,110,3600,110C3360,110,3120,110,2880,110C2640,110,2400,110,2160,110C1920,110,1680,110,1440,110C1200,110,960,110,720,110C480,110,240,110,120,110L0,110Z"></path></svg>
+    <section id="food" class="bg-light" >
+      <div class="container-lg hidden2" id="d2">
+        <div class="row justify-content-center g-5 align-items-center">
+          <div class="col-lg-6">
+            <h1 class="custom-border  ">骑行补给</h1>
+            <p class=" lh-lg lead">当你要长途骑行的时候，补给是至关重要的，人骑行消耗能量就好比汽车在用汽油一样。在骑行之前吃顿像样的饭，最好能吃一些低碳低脂肪食物，因为低碳食物意味着能量会被慢慢释放。但这是不够的，因为骑行是一项消耗能量很大的运动。您还要学会在沿途中补给。</p>
+            <p class=" lh-lg lead">最好是尽量记住每30分钟吃一次东西，不管是能量棒，能量胶，巧克力或者是其他什么食物，都是可以的。每30分钟，少量吃一次，来给身体补充能量。</p>
+            <p class=" lh-lg lead">除了固态食物，您还需要携带至少一个水瓶。在接下来的内容中，我们会向您推荐骑行专用水瓶。如果天气炎热，强烈建议您装满电解质水，这会补充您流汗流失的矿物质。</p>
+          </div>
+          <div class=" col-lg-4 ms-5">
+            <figure class="figure">
+              <img src="images/jiao.png" class="figure-img img-fluid rounded-4" >
+              <figcaption class="figure-caption text-center fw-bold ">能量胶</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="zhuangbei">
+      <div class="container-lg fade-in" id="d3">
+        <h1 class="text-center my-5">骑行装备介绍</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card h-100 shadow">
+              <img src="images/zhuangbei/helmet.png" class="card-img-top border-bottom border-1 border-dark zb-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center fw-bold"><i class="bi bi-caret-right text-warning"></i>头盔</h5>
+                <p class="card-text">骑行头盔是骑手必备的安全装备，能够有效保护头部免受撞击伤害，确保骑行过程中的安全。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow">
+              <img src="images/zhuangbei/cloth.png" class="card-img-top border-bottom border-1 border-dark zb-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center"><i class="bi bi-caret-right text-warning"></i>骑行服</h5>
+                <p class="card-text">骑行服采用专业的透气材料，贴合身形，提供舒适感，同时具备排汗和防风等功能，提高骑行体验。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow">
+              <img src="images/zhuangbei/frontLight.png" class="card-img-top border-bottom border-1 border-dark zb-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center"><i class="bi bi-caret-right text-warning"></i>前灯</h5>
+                <p class="card-text">前车灯是安装在自行车前部的照明设备，提供在夜间或低光条件下的可见性，增加骑行安全性。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow">
+              <img src="images/zhuangbei/endLight.png" class="card-img-top border-bottom border-1 border-dark zb-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center"><i class="bi bi-caret-right text-warning"></i>尾灯</h5>
+                <p class="card-text">后尾灯安装在自行车后部，作为被动安全装备，提高其他车辆在夜间或低能见度情况下对骑手的察觉度。</p>
+              </div>
+            </div>
+          </div>
+        </div>        
+
+        <div class="row row-cols-1 row-cols-md-4 g-4 my-1">
+          <div class="col">
+            <div class="card h-100 shadow">
+              <img src="images/zhuangbei/glasses.png" class="card-img-top border-bottom border-1 border-dark zb-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center"><i class="bi bi-caret-right text-warning"></i>骑行眼镜</h5>
+                <p class="card-text"> 骑行眼镜不仅能有效阻挡风沙，提高骑行舒适度，还能防止紫外线和异物对眼睛的伤害。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow">
+              <img src="images/zhuangbei/watch.png" class="card-img-top border-bottom border-1 border-dark zb-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center"><i class="bi bi-caret-right text-warning"></i>码表</h5>
+                <p class="card-text">码表是一种测量骑行速度、距离和时间的工具，帮助骑手监控骑行状态，进行科学合理的锻炼和导航。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow">
+              <img src="images/zhuangbei/shoes.png" class="card-img-top border-bottom border-1 border-dark zb-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center"><i class="bi bi-caret-right text-warning"></i>锁鞋</h5>
+                <p class="card-text"> 锁鞋是专业骑行鞋的一部分，可以与骑行踏板配合使用，提供更高效的踩踏力和稳定性，是骑手提高骑行效率的重要装备。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 shadow">
+              <img src="images/zhuangbei/bottle.png" class="card-img-top border-bottom border-1 border-dark zb-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center"><i class="bi bi-caret-right text-warning"></i>骑行水瓶</h5>
+                <p class="card-text">运动水壶方便携带，确保骑行过程中能及时补充水分，维持身体水分平衡，提升体能和耐力。</p>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </section>
+
+    <section id="maintenance" style="margin-top:10rem;">
+      <div class="container-lg ">
+        <h1 class="fw-bold text-center m-5">如何保养您的爱车</h1>
+        <div class="row g-5 justify-content-center">
+          <div class="col-lg-5 lh-base ">
+            <p class="orange fw-bolder "><i class="bi bi-chevron-double-right"></i> 轮胎充好气</p>
+            <p class=" my-1 fs-5"><strong>检查频率：</strong>至少一个月检查一次</p>
+            <p class=" my-1">在轮胎上有轮胎推荐气压范围。如果平常骑的以平路为主，就把胎压大一点，这样自行车更加轻快，这对公路自行车来说尤为重要。如果平常骑的路比较颠簸，建议把胎压打小一点，轮胎更软，就会拥有更好的滤震效果。</p>
+            <p class=" my-1">最好使用有带气压表的打气筒。</p>
+
+            <img src="images/tire.png" class="img-fluid rounded-2">
+          </div>
+
+
+          <div class="col-lg-5 ">
+            <p class="orange fw-bolder"><i class="bi bi-chevron-double-right"></i> 保持自行车干净</p>
+            <p class="my-2 fs-5"><strong>清洗工具准备：</strong>清洁剂，除油剂。刷子，毛巾或者海绵。</p>
+            <p class="my-2">①首先用软水管冲遍自行车，不要忘记坐垫下面的部分哦。</p>
+            <p class="my-2">②自行清洁清洁剂喷到海绵或者毛巾上，彻底的清洁。</p>
+            <p class="my-2">如果你觉得不够，可以再次重复上述过程</p>
+            <p class="my-2">⑤使用两块抹布，一块清洁传动链条和齿轮，一块清洁剩下的部分。</p>
+            <a href="https://www.youtube.com/watch?v=VKBNDzCLzK8&t=328s"><button class="check-button mt-4 fade-in">详细清洗视频 --></button></a>
+          </div>
+        </div>
+
+        <p class="orange fw-bolder " style="margin-top:10rem;"><i class="bi bi-chevron-double-right"></i> 链条上好油</p>
+        <div class="card  shadow  rounded bg-white" style="margin-bottom: 3rem;">
+
+          <div class="row g-0 justify-content-center">
+            <div class="col-7  col-lg-6 col-xl-6 mt-3 mt-lg-0">
+              <img src="images/oil.png" class="img-fluid rounded-start">
+            </div>
+
+
+            <div class=" col-lg-6 col-xl-6">
+              <div class="card-body text-start ">
+                <h3 class="card-title pb-2 mt-2 border-bottom border-warning border-3">链条油种类</h3>
+                <p class="card-text p-0 m-0 mb-lg-2 lead"><i class="bi bi-dot dot"></i>湿性链条油，使用频率低，适合雨天长距离，容易沾灰。推荐迪卡侬。上油前，毛刷干净传动系统，再用纸擦擦，平均两个月一次。
+                <p class="card-text p-0 m-0  lead "><i class="bi bi-dot dot"></i>干性链条油，使用频率高，适合路面下雨天不骑行。不想经常清洗，200公里左右就要上油。推荐赛领的干性链条油。</p>
+          
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card mb-5 shadow  rounded bg-white">
+          <div class="row g-0 justify-content-center">
+            <div class=" col-lg-6 col-xl-7">
+              <div class="card-body text-start ">
+                <h3 class="card-title pb-2 mt-2 border-bottom border-warning border-3">如何上油</h3>
+                <p class="card-text p-0 m-0 mb-lg-3 lead"><i class="bi bi-dot dot"></i>我们要确保链条的每一处被上好油。</p>
+                <p class="card-text p-0 m-0 mb-lg-3 lead"><i class="bi bi-dot dot"></i>向后转动脚踏板的同时，如图所示使用润滑油。</p>
+                <p class="card-text p-0 m-0  lead"><i class="bi bi-dot dot"></i>多来几圈，但是不要到油可以从链条上低落的程度。</p>
+              </div>
+            </div>
+
+            <div class="col-7  col-lg-6 col-xl-5 mt-3 mt-lg-0">
+              <img src="images/oil2.png" class="img-fluid rounded-start" style="max-height: 300px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--单手放手骑行-->
+    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 110" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(248, 249, 250, 1)" offset="0%"></stop><stop stop-color="rgba(248.525, 248.525, 248.525, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,11L120,22C240,33,480,55,720,58.7C960,62,1200,48,1440,34.8C1680,22,1920,11,2160,11C2400,11,2640,22,2880,29.3C3120,37,3360,40,3600,51.3C3840,62,4080,81,4320,89.8C4560,99,4800,99,5040,91.7C5280,84,5520,70,5760,69.7C6000,70,6240,84,6480,91.7C6720,99,6960,99,7200,84.3C7440,70,7680,40,7920,27.5C8160,15,8400,18,8640,31.2C8880,44,9120,66,9360,64.2C9600,62,9840,37,10080,25.7C10320,15,10560,18,10800,16.5C11040,15,11280,7,11520,14.7C11760,22,12000,44,12240,45.8C12480,48,12720,29,12960,22C13200,15,13440,18,13680,27.5C13920,37,14160,51,14400,64.2C14640,77,14880,88,15120,88C15360,88,15600,77,15840,67.8C16080,59,16320,51,16560,49.5C16800,48,17040,51,17160,53.2L17280,55L17280,110L17160,110C17040,110,16800,110,16560,110C16320,110,16080,110,15840,110C15600,110,15360,110,15120,110C14880,110,14640,110,14400,110C14160,110,13920,110,13680,110C13440,110,13200,110,12960,110C12720,110,12480,110,12240,110C12000,110,11760,110,11520,110C11280,110,11040,110,10800,110C10560,110,10320,110,10080,110C9840,110,9600,110,9360,110C9120,110,8880,110,8640,110C8400,110,8160,110,7920,110C7680,110,7440,110,7200,110C6960,110,6720,110,6480,110C6240,110,6000,110,5760,110C5520,110,5280,110,5040,110C4800,110,4560,110,4320,110C4080,110,3840,110,3600,110C3360,110,3120,110,2880,110C2640,110,2400,110,2160,110C1920,110,1680,110,1440,110C1200,110,960,110,720,110C480,110,240,110,120,110L0,110Z"></path></svg>
+    <section id="freeOfHand1" class="bg-light hidden" >
+      <div class="container-lg">
+        <div class="row justify-content-center g-5 align-items-center">
+          <div class="col-lg-6">
+            <h1 class="custom-border">单手骑车</h1>
+            <p class=" lh-lg lead">这个是<strong>必须</strong>要掌握的技能。你可以在骑行中打手势，可以给同伴指出障碍，可以在骑行的过程中吃东西，从水杯架中拿水瓶，锻炼对自行车的掌握能力，能够在更多的情况下更好地驾驭自行车。</p>
+            <p class=" lh-lg lead">单手骑行的<strong>诀窍</strong>是：当一只手行驶的时候，不要把上半身的压力都压在另一只手上，而是放松你的肩膀，放松你的核心，以及胳膊肘。</p>
+
+          </div>
+          <div class=" col-lg-4 ms-5">
+            <figure class="figure">
+              <img src="images/oneHand1.png" class="figure-img img-fluid rounded-4" >
+              <figcaption class="figure-caption text-center fw-bold ">单手打手势</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="freeOfHand2">
+      <div class="container">
+        <h1 class="text-center fw-bold m-5">如何解放双手</h1>
+        <div class="row g-5 justify-content-center">
+          <div class="col-lg-5">
+            <h3 class="fs-4 fw-bold">放手的好处</h3>
+            <p class="text-muted lh-lg">允许你在骑行中脱掉一件衣服，更好的喝水，打开能量棒的包装。当然..也可以允许你小小的装一下。或者是庆祝！万一哪天就成为某个比赛的冠军了呢~</p>
+            <figure class="figure mt-3">
+              <img src="images/noHand1.png" class="figure-img img-fluid rounded-4" >
+              <figcaption class="figure-caption text-center fw-bold ">波加查赢得赛段</figcaption>
+            </figure>
+          </div>
+
+          <div class="col-lg-5 fade-in">
+            <h3 class="fs-4 fw-bold">如何放手</h3>
+            <p class="text-muted my-1">确保您先学会单手骑行。</p>
+            <p class="text-muted my-1">①选一个平坦，人少的地方。</p>
+            <p class="text-muted lh-lg my-1">②尝试伸手去触碰水瓶架，后备，各个方向，找到保持平衡的感觉。请把速度当做你的伙伴，因为速度会帮助你更好的平衡自己。</p>
+            <p class="text-muted">③尝试将手从车把上拿开，可以拿到图示的位置，以便失去平衡的时候快速抓住车把。</p>
+            <img src="images/noHand2.png" alt="" class="img-fluid rounded-4 my-1">
+            <p class="text-muted lh-lg my-1">④把重量慢慢的往坐垫上倾斜，想象<strong>蹲马步</strong>的姿势。不断把手离车把远一点，尝试坐直，因为身体前倾可能导致坐垫摇晃。试着放松和习惯那种感觉。专注于直视和调动你的核心力量。</p>
+            <p class="text-muted">学习一项技术是需要很长的时间的历练的，可能要花几天，几周，几个月，坚持练习，绝对能做到。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,32L40,58.7C80,85,160,139,240,165.3C320,192,400,192,480,186.7C560,181,640,171,720,160C800,149,880,139,960,138.7C1040,139,1120,149,1200,160C1280,171,1360,181,1400,186.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+  
+    <section style="margin-top:5rem;position: relative;" >
+      <div class="container-lg text-center">
+        <h1 class="fw-bold mb-4 fade-in">恭喜你完成学习！真心祝贺您！</h1>
+        <p class="lead mb-4">想进一步增加对自行车的了解？我们还有基础知识模块等着您</p>
+        <a href="basicKnowledge.html" class="check-button">点此进入</a>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <svg t="1702467978411" class="icon" viewBox="0 0 1792 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4447" width="200" height="200"><path d="M1456 352c-61.568 0-119.136 16.928-168.832 45.952L1069.536 64h307.168c-0.416 15.936-4.128 42.592-22.368 63.552C1335.552 149.088 1305.184 160 1264 160a16 16 0 0 0 0 32c50.848 0 89.344-14.592 114.432-43.392 37.216-42.752 29.76-100.352 29.408-102.784A16 16 0 0 0 1392 32h-352a15.936 15.936 0 1 0-13.376 24.768l90.592 139.008H609.536L510.88 32H688a16 16 0 0 0 0-32h-288a16 16 0 0 0 0 32h74.048c0.32 0.736 0.384 1.536 0.8 2.24l109.184 181.184-97.728 172.48A333.76 333.76 0 0 0 336 352C150.72 352 0 502.72 0 688S150.72 1024 336 1024c178.816 0 325.024-140.512 333.44-320H1024c0.928 18.528-3.072 43.776-20.608 63.648C984.448 789.12 953.696 800 912 800a16 16 0 0 0 0 32c51.456 0 90.368-14.624 115.648-43.456 36.544-41.728 29.664-97.152 29.376-99.488a16 16 0 0 0-15.872-13.92h-125.696l225.504-442.88 119.36 183.168C1175.52 476.448 1120 575.744 1120 688 1120 873.28 1270.72 1024 1456 1024S1792 873.28 1792 688 1641.28 352 1456 352zM1107.36 224l-219.136 434.176L628.832 224h478.528z m-504.384 22.88l258.08 428.256H671.36a335.584 335.584 0 0 0-157.184-271.488l88.8-156.768z m36.384 428.256h-279.008l138.048-243.68a303.776 303.776 0 0 1 140.96 243.68zM336 992C168.384 992 32 855.616 32 688S168.384 384 336 384c48.32 0 93.888 11.648 134.528 31.776l-151.552 267.456a15.936 15.936 0 0 0 0.096 15.936c2.848 4.896 8.128 7.936 13.824 4.8h306.144C629.088 865.824 497.184 992 336 992z m1120 0c-167.616 0-304-136.384-304-304 0-101.024 49.728-190.464 125.824-245.76l167.904 257.632a16.064 16.064 0 0 0 22.144 4.672 16.064 16.064 0 0 0 4.672-22.144l-167.904-257.632A301.504 301.504 0 0 1 1456 384c167.616 0 304 136.384 304 304S1623.616 992 1456 992z" fill="#ffffff" p-id="4448"></path></svg>
+          <h2>Get a bicycle. <br>You will not regret it <br>if you live.</h2>
+          <h2>----  Mark Twain</h2>
+        </div>
+        
+        <div class="footer-heading footer-1">
+          <h2>导航</h2>
+          <a href="bikeSelect.html">自行车选择</a>
+          <a href="studyMap.html">学习路线</a>
+          <a href="basicKnowledge.html">基本知识</a>
+          <a href="contactUs.html">关于我们</a>        
+        </div>
+  
+        <div class="footer-heading footer-2">
+          <h2>服务</h2>
+          <a href="bikeSelect.html">调查问卷</a>
+          <a href="studyMap.html">量身定制</a>
+          <a href="basicKnowledge.html#sources">优质资源推荐</a>
+          <a href="https://video.zhibo.tv/">观看自行车比赛</a>        
+        </div>
+  
+        <div class="footer-heading footer-3">
+          <h2>联系我们</h2>
+          <div><svg t="1702468333958" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7434" width="200" height="200"><path d="M874.666667 181.333333H149.333333c-40.533333 0-74.666667 34.133333-74.666666 74.666667v512c0 40.533333 34.133333 74.666667 74.666666 74.666667h725.333334c40.533333 0 74.666667-34.133333 74.666666-74.666667V256c0-40.533333-34.133333-74.666667-74.666666-74.666667z m-725.333334 64h725.333334c6.4 0 10.666667 4.266667 10.666666 10.666667v25.6L512 516.266667l-373.333333-234.666667V256c0-6.4 4.266667-10.666667 10.666666-10.666667z m725.333334 533.333334H149.333333c-6.4 0-10.666667-4.266667-10.666666-10.666667V356.266667l356.266666 224c4.266667 4.266667 10.666667 4.266667 17.066667 4.266666s12.8-2.133333 17.066667-4.266666l356.266666-224V768c0 6.4-4.266667 10.666667-10.666666 10.666667z" fill="#666666" p-id="7435"></path></svg> 972867691@qq.com</div>
+          <div><svg t="1702468363442" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8433" width="200" height="200"><path d="M732.096 896c-105.696 0-319.968-109.088-422.784-212.32-102.784-103.264-211.392-318.496-211.392-424.64C97.92 259.04 178.912 128 231.776 128s211.392 159.232 158.528 212.352c-52.864 53.056-105.696 53.056-105.696 106.144s52.832 106.144 105.696 159.232c52.832 53.088 105.696 106.144 158.528 106.144 52.864 0 52.864-53.056 105.696-106.144 52.832-53.088 211.392 106.144 211.392 159.232 0 53.088-133.824 131.04-133.824 131.04z" fill="#ffffff" p-id="8434"></path></svg> ...........</div>
+          <div><svg t="1702468450413" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9454" width="200" height="200"><path d="M793.088 485.248a298.688 298.688 0 1 0-562.432-0.64C257.92 560.64 352.448 698.496 512 891.328c159.232-192.64 253.76-330.176 281.088-406.08zM512 1024c-205.76-241.472-326.272-411.712-361.664-510.72a384 384 0 1 1 723.072 0.832C837.76 612.928 717.312 782.848 512 1024.064z m0-512a128 128 0 1 0 0-256 128 128 0 0 0 0 256z" fill="#ffffff" p-id="9455"></path></svg>武汉理工大学</div>
+        </div>  
+      </div>
+
+      
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
